@@ -19,7 +19,7 @@ public class Calculater {
 		i=Integer.parseInt(s);
 		Numbers1();
 	}
-	public static String[] Numbers1(){
+	public static void Numbers1(){
 		for (j=1;j<i; j++){
 			Scanner sc=new Scanner(System.in);
 
@@ -71,11 +71,11 @@ public class Calculater {
 			num3=(number[i])-(number[i+1]);
 			System.out.println("Sub of your value is:" +num3);
 		}
-		else if (oper.equals("*")) {
+		else if (oper1.equals("*")) {
 			num3=(number[i])*(number[i+1]);
 			System.out.println("Multi of your value is:" +num3);
 		}
-		else if (oper.equals("/")) {
+		else if (oper1.equals("/")) {
 			float num3=(number[i])/(number[i+1]);
 			System.out.println("Dev of your value is:" +num3);
 		}
@@ -83,9 +83,10 @@ public class Calculater {
 			System.out.println("incorrect value");
 		}
 
+
 	}
 
-}
+
 public static void firstcalculation() {
 	int num1 =Integer.parseInt(num4);
 	if(oper1.equals("+")){
@@ -96,20 +97,18 @@ public static void firstcalculation() {
 		num3=(number[i])-(number[i+1]);
 		System.out.println("Sub of your value is:" +num3);
 	}
-	else if (oper.equals("*")) {
+	else if (oper1.equals("*")) {
 		num3=(number[i])*(number[i+1]);
 		System.out.println("Multi of your value is:" +num3);
 	}
-	else if (oper.equals("/")) {
+	else if (oper1.equals("/")) {
 		float num3=(number[i])/(number[i+1]);
 		System.out.println("Dev of your value is:" +num3);
 	}
 	else {
 		System.out.println("incorrect value");
 	}
-}
+
 
 }
-public static void calculation() {
-
 }
