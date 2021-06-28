@@ -51,11 +51,11 @@ public class StringManupulation {
 			System.out.println("str5 split value on index "+a+" is "+str5[a]);		
 		}
 
-		//Concat: Adding value to string 
+		//14. Concat: Adding value to string 
 		System.out.println("After concat Z to str4 value is " +str4.concat("Z"));
 
 
-		//Adding String
+		//15. Adding String
 		String str6="Akash";
 		String str7="Singh";
 		int e=100;
@@ -71,11 +71,26 @@ public class StringManupulation {
 		// Return value with bracket
 		System.out.println("Added value with using bracket and vakue is "+(str6+str7+(e+f)));
 
-
-
-
-
-
+		//16. As String is in-mutable we can not reverse string directly(Means can not change)
+		String word = "Akash1234";
+		int h = word.length();
+		for (int j=0;j<word.length();j++) {
+			h--;
+			char	revword=word.charAt(h);
+			System.out.print(revword);
+		}
+		//17. We can reverse char from String Buffer class
+		String str8="akash1234";
+		StringBuffer sb=new StringBuffer(str8);
+		System.out.println("Reverse of Str8 with String Buffer is "+sb.reverse());;
+//Reverse int
+		int l=12345;
+		System.out.println("Reverse of integer and value is " +(new StringBuffer(String.valueOf(l)).reverse()));
+		
+		//18. Remove Junk/Special Chars in a String. Means remove apart from value is a-z, A-Z and 0-9: Expression is [^a-zA-Z0-9]
+		//^ is not expression
+		String str9= "Akash_9936^%$#@Si><?:ng  **h1";  
+		System.out.println("Remove all special char from String str9 and value is "+str9.replaceAll("[^a-zA-Z0-9]", ""));		
 
 
 
